@@ -4,7 +4,7 @@ Some Visual Studio Code Ngrx snippets.
 ## Installation
 First, copy the snippet from this repository.  
 
-1. Go to the snippet and then click the "Raw" button.
+1. Go to the snippet in this repo (typescript.json) and then click the "Raw" button.
 
 ![Raw button](/assets/images/raw.png "Raw Button")
 
@@ -14,7 +14,7 @@ Now in Visual Studio Code, go to File --> Preferences --> User Snippets.
 
 A selector will open asking for what language to select, enter 'typescript' and you'll open the ```typescript.json``` file.  If the file is blank, you can simply paste the entire snippet into the file and save it.
 
-If you already have some code, then you'll want to add these snippets to the end of your array.  You'll have to copy just the snippet JSON objects, and NOT the outer object.  Then you can paste the code into your JSON file and save it.
+If you already have some code, then you'll want to add these snippets to the end of your snippets.  You'll have to copy just the Ngrx JSON object snippets, and NOT the outer object.  Then you can paste the code into your JSON file and save it.
 
 Now you'll have these snippets available in your application.
 
@@ -37,6 +37,8 @@ export interface Customer {
 Each snippet file will accept both the Pascal-cased model and the camel-cased model.  The Pascal-cased model will be first, so enter ```Customer```.  Then hit ```Tab```, to move to the next position for the camel-cased placeholder, and type ```customer```.  The finally, ```Tab``` to finish the process.
 
 Your Ngrx Actions file should be 99% finished.  You will just need to bring in the import statements.
+
+Continue this process in each of the Ngrx files to create the Ngrx files for the feature module.
 
 ### CAUTION!!!
 When importing statements, if you select the "Import all ..." option, be careful that you check that the references are correct.  Depending on other packages you have in your project, there could be types that are named the same as Ngrx types, such as ```Action```.  This can be found also in various other packages, so you'll have to double check that your import references are correct.
